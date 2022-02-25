@@ -2,24 +2,34 @@ import java.util.Scanner;
 
 public class Array {
     public static void main(String[] args) {
-        //int arr[][]=new int[3][4];
-        int arr[][]=new int[][]{
-                {10,20,23,40},
-                {34,89,56,12},
-                {23,56,78,67}
+        //int arr[][]=new int[4][4];
+        int arr[][] = new int[][]{
+                {10, 20, 23, 40},
+                {34, 89, 56, 12},
+                {23, 56, 78, 67},
+                {45, 67, 12, 34}
         };
-
-        for(int i=0;i<4;i++) {
-int s=0;
-            for (int j = 0; j < 3; j++) {
-             //s=s+arr[i][j];
-                s=s+arr[j][i];
-                //System.out.print(arr[i][j] + "  ");
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
+                if (i == 0 || j == 0 || i == arr.length - 1 || j == arr.length - 1) {
+                    System.out.print(arr[i][j] + "\t");
+                } else System.out.print(" \t");
 
             }
-            System.out.println(s);
-            //System.out.println();
+            System.out.println();
         }
+
+        //      for(int i=0;i<4;i++) {
+//int s=0;
+//            for (int j = 0; j < 3; j++) {
+//             //s=s+arr[i][j];
+//                s=s+arr[j][i];
+//                //System.out.print(arr[i][j] + "  ");
+//
+//            }
+//            System.out.println(s);
+//            //System.out.println();
+//        }
 
         //System.out.println();
 
@@ -56,5 +66,5 @@ int s=0;
 //            s=s+arr[i];
 //}
 //        return s;
-}
+    }
 }
