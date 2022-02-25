@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Assignment7 {
     public static void main(String[] args) {
+        System.out.println("Its changing code");
         //Declare an array of char, and store your first name
         char firstname[] = {'S', 'u', 'k', 'h', 'v', 'i', 'n', 'd', 'e', 'r'};
         System.out.print("First name is : ");
