@@ -1,5 +1,3 @@
-import java.util.Locale;
-
 public class Assignment2 {
     public static void main(String[] args) {
        square(4);
@@ -21,7 +19,7 @@ public class Assignment2 {
     {
         System.out.println("Area of circle is :"+pi*r*r);
     }
-    public static void printFullName(String firstname,String lastname)
+    public static void printFullName(String firstname, String lastname)
     {
         System.out.println("Full name is :"+firstname+" "+lastname);
     }

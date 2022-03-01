@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class Array {
     public static void main(String[] args) {
@@ -66,5 +66,10 @@ public class Array {
 //            s=s+arr[i];
 //}
 //        return s;
+
+
+        char firstname[]={'S','u','k','h','v','i','n','d','e','r'};
+        System.out.println(firstname);
+        System.out.println(Arrays.toString(firstname));
     }
 }
