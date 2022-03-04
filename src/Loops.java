@@ -5,6 +5,7 @@ public class Loops {
         printEven();
         printOdd();
         incrementByTwo();
+        System.out.println("hello");
     }
 
     public static void numberInc() {
