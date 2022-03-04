@@ -17,9 +17,6 @@ public class Array {
 
             }
             System.out.println();
-            System.out.println("My changes");
-
-            System.out.println("yagna changes");
 
         }
 
