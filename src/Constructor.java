@@ -8,7 +8,7 @@ public class Constructor {
     }
     public Constructor()
     {
-        this("sukhvinder");
+        this("sukhvinder");//calling a constructor from constructor
     }
 
     public Constructor(int age, Double balance) {
@@ -16,6 +16,7 @@ public class Constructor {
         this.balance = balance;
     }
 
+//to ask from GOD father
     @Override
     public String toString() {
         return "Constructor{" +
@@ -26,6 +27,8 @@ public class Constructor {
     }
 
     public static void main(String[] args) {
+        Constructor cn=new Constructor();
+        System.out.println(cn);
 
     }
 }
