@@ -35,16 +35,72 @@ public class LongStringDemo {
         //***********************
 
 
-        String[] names=new String[5];
-        names[0]="sukhvinder";
-        names[1]="mandeep";
-        names[2]="navdeep";
-        names[3]="yagna";
-        names[4]="manpreet";
-        System.out.println(Arrays.binarySearch(names, "navdeep"));
-        System.out.println(Arrays.compare(new int[]{1, 2, 3},0,1, new int[]{1, 2, 4},0,1 ));
-        System.out.println(Arrays.compareUnsigned(new int[]{2, 3}, new int[]{-2, 3}));
-        String[] copy = Arrays.copyOf(names, 3, String[].class);
-        System.out.println(Arrays.toString(copy));
+//        String[] names=new String[5];
+//        names[0]="sukhvinder";
+//        names[1]="mandeep";
+//        names[2]="navdeep";
+//        names[3]="yagna";
+//        names[4]="manpreet";
+//        System.out.println(Arrays.binarySearch(names, "navdeep"));
+//        System.out.println(Arrays.compare(new int[]{1, 2, 3},0,1, new int[]{1, 2, 4},0,1 ));
+//        System.out.println(Arrays.compareUnsigned(new int[]{2, 3}, new int[]{-2, 3}));
+//        String[] copy = Arrays.copyOf(names, 3, String[].class);
+//        System.out.println(Arrays.toString(copy));
+//        int arr[]=new int[10];
+//        Arrays.fill(arr,2);
+//        System.out.println(Arrays.toString(arr));
+//        System.out.println(Arrays.toString(names));
+//        Arrays.sort(names);
+//        System.out.println(Arrays.toString(names));
+
+
+        Student[] s=new Student[5];
+        s[0]=new Student("sukh","QA");
+        s[1]=new Student("navdeep","java");
+        s[2]=new Student("geetha","QA");
+        s[3]=new Student("aman","java");
+        s[4]=new Student("mandeep","QA");
+        System.out.println(Arrays.toString(s));
+        Arrays.sort(s);
+        System.out.println(Arrays.toString(s));
+        Student student=new Student("sukh","QA","1234567890");
+        System.out.println("12345678u0".matches("[0-9]+"));
+//        StringBuffer with multi threading concept
+        StringBuffer st=new StringBuffer("sukhvinder");
+        st.delete(2,4);
+        System.out.println(st);
+//        stringBuilder no threading concept means single thread
+
+
+    }}
+    class Student implements Comparable<Student>{
+private String name;
+private String course;
+private String phone;
+
+        public Student(String name, String course, String phone) {
+            this.name = name;
+            this.course = course;
+            this.phone = phone;
+        }
+
+        public Student(String name, String course) {
+            this.name = name;
+            this.course = course;
+        }
+
+        @Override
+        public String toString() {
+            return "Student{" +
+                    "name='" + name + '\'' +
+                    ", course='" + course + '\'' +
+                    '}';
+        }
+
+        @Override
+        public int compareTo(Student o) {
+            return this.name.compareTo(o.name);
+        }
     }
-}
+
+
