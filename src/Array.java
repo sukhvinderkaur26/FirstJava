@@ -20,7 +20,7 @@ public class Array {
             System.out.println("yagna changes");
 
             System.out.println("vivek changes");
-            System.out.println("Wrong statement")
+            System.out.println("Wrong statement");
 
         }
 
