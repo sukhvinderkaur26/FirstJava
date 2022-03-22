@@ -35,7 +35,7 @@ public class Array {
 //            System.out.println(s);
 //            //System.out.println();
 //        }
-
+        System.out.println("Hello World");
         //System.out.println();
 
 // char firstname[]={'S','u','k','h','v','i','n','d','e','r'};
